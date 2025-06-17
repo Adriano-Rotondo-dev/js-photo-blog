@@ -16,12 +16,12 @@ fetch(endpoint)
     data.forEach((post) => {
       //*destrutturo l'obj restituito dall'AJAX request per ottenere dateEl e imgEl variables
       const { date, url } = post;
-      //TODO: creo il MarkUp da usare per la singola col e card
+      //* creo il MarkUp da usare per la singola col e card
+      //* rimpiazzo i placeholder con dateEl e imgEl variables
       const postMarkUp = `<div class="col">
                             <div class="card">
                                 <img id="pin" src="../assets/img/pin.svg" alt="pin_img">
                                 <div class="card-header">
-                                //* rimpiazzo i placeholder con dateEl e imgEl variables
                                     <img id="post_img" class="placeholder" src="${url}">
                                 </div>
                                 <div class="cardbody"> ${date} </div>
