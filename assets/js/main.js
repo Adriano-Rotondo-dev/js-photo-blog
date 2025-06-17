@@ -24,7 +24,10 @@ fetch(endpoint)
                                 <div class="card-header">
                                     <img class ="post_img" src="${url}" alt="${title}">
                                 </div>
-                                <div class="cardbody"> ${date} </div>
+                                <div class="cardbody">
+                                <p> ${title} </p>
+                                <p> ${date} </p>
+                                </div>
                             </div>
                         </div>`;
       //* aggiorno il DOM element con il MarkUp
