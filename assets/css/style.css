@@ -19,7 +19,7 @@ body {
 }
 h1 {
   font-family: "Edu Tas Beginner", sans-serif;
-  font-size: 5rem;
+  font-size: 4rem;
 }
 /*#endregion Banner*/
 
@@ -35,12 +35,14 @@ h1 {
   flex-wrap: wrap;
   gap: 1rem;
   justify-content: center;
+  padding: 1rem;
 }
 .col-3 {
   display: flex;
   justify-content: center;
   align-items: center;
   width: calc((100% / 12) * 3);
+  min-width: 310px;
 }
 
 .card {
@@ -58,7 +60,7 @@ h1 {
   max-width: 1.5rem;
   max-height: 1.5rem;
   position: absolute;
-  left: 7.6rem;
+  left: 8rem;
   top: -0.5rem;
 }
 .post_img {
@@ -66,3 +68,28 @@ h1 {
   max-height: 266px;
 }
 /* #endregion Main */
+
+/*#region MEDIA QUERY */
+
+/*media query TABLET md*/
+@media screen and (max-width: 780px) {
+  h1 {
+    font-size: 4rem;
+  }
+
+  .col-md-5 {
+    width: calc((100% / 12) * 5);
+  }
+}
+
+@media screen and (max-width: 586px) {
+  h1 {
+    font-size: 5rem;
+  }
+
+  .col-sm-12 {
+    width: 100%;
+  }
+}
+
+/*#endregion MEDIA QUERY */

@@ -18,7 +18,7 @@ fetch(endpoint)
       const { date, url, title } = post;
       //* creo il MarkUp da usare per la singola col e card
       //* rimpiazzo i placeholder con dateEl e imgEl variables
-      const postMarkUp = `<div class="col-3">
+      const postMarkUp = `<div class="col-3 col-md-5 col-sm-12">
                             <div class="card">
                                 <img class ="pin" src="./assets/img/pin.svg" alt="pin_img">
                                 <div class="card-header">
