@@ -81,8 +81,9 @@ h1 {
     width: calc((100% / 12) * 5);
   }
 }
-
+/* media query Mobile sm*/
 @media screen and (max-width: 586px) {
+
   h1 {
     font-size: 5rem;
   }
@@ -92,4 +93,12 @@ h1 {
   }
 }
 
+/*media query mobile xsm*/
+@media screen and (max-width: 390px) {
+
+h1 {
+  font-size: 4rem;
+}
+
+}
 /*#endregion MEDIA QUERY */
