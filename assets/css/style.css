@@ -41,12 +41,12 @@ h1 {
   position: relative;
   font-family: "Edu Tas Beginner";
 }
-#pin{
-    max-width: 1.5rem;
-    max-height: 1.5rem;
-    position: absolute;
-    left: 7.6rem;
-    top:-0.5rem
+#pin {
+  max-width: 1.5rem;
+  max-height: 1.5rem;
+  position: absolute;
+  left: 7.6rem;
+  top: -0.5rem;
 }
 #post_img {
   max-width: 266px;
