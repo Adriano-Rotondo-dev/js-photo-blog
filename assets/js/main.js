@@ -15,14 +15,14 @@ fetch(endpoint)
     //* creo un ciclo forEach per ciclare al suo interno e prendo il singolo elemento
     data.forEach((post) => {
       //*destrutturo l'obj restituito dall'AJAX request per ottenere dateEl e imgEl variables
-      const { date, url } = post;
+      const { date, url, title } = post;
       //* creo il MarkUp da usare per la singola col e card
       //* rimpiazzo i placeholder con dateEl e imgEl variables
-      const postMarkUp = `<div class="col">
+      const postMarkUp = `<div class="col-3">
                             <div class="card">
-                                <img id="pin" src="../assets/img/pin.svg" alt="pin_img">
+                                <img class ="pin" src="./assets/img/pin.svg" alt="pin_img">
                                 <div class="card-header">
-                                    <img id="post_img" class="placeholder" src="${url}">
+                                    <img class ="post_img" src="${url}" alt="${title}">
                                 </div>
                                 <div class="cardbody"> ${date} </div>
                             </div>

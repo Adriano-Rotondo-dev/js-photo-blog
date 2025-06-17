@@ -4,21 +4,21 @@
   padding: 0;
   box-sizing: border-box;
 }
-/*hidden scrollbar*/
+
 body {
-  overflow-y:hidden;
+  overflow-y: hidden;
 }
 
 /* #region Banner */
 #banner {
   background: url("../img/wall.png");
-  min-height: 150px;
+  min-height: 100px;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 h1 {
-  font-family: "Edu Tas Beginner";
+  font-family: "Edu Tas Beginner", sans-serif;
   font-size: 5rem;
 }
 /*#endregion Banner*/
@@ -33,13 +33,16 @@ h1 {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  gap:30px
+  gap: 1rem;
+  justify-content: center;
 }
-.col {
+.col-3 {
   display: flex;
   justify-content: center;
   align-items: center;
+  width: calc((100% / 12) * 3);
 }
+
 .card {
   display: flex;
   flex-direction: column;
@@ -47,19 +50,18 @@ h1 {
   max-width: 300px;
   max-height: 360px;
   padding: 10px 10px 30px;
-  margin-top: 50px;
-  margin-left: 50px;
+  margin-top: 2rem;
   position: relative;
-  font-family: "Edu Tas Beginner";
+  font-family: "Sometype Mono", monospace;
 }
-#pin {
+.pin {
   max-width: 1.5rem;
   max-height: 1.5rem;
   position: absolute;
   left: 7.6rem;
   top: -0.5rem;
 }
-#post_img {
+.post_img {
   max-width: 266px;
   max-height: 266px;
 }
