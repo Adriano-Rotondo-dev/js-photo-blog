@@ -1,0 +1,48 @@
+/* css reset  */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* #region Banner */
+#banner {
+    background: url("../img/wall.png");
+    min-height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+h1 {
+    font-family: "Edu Tas Beginner";
+    font-size: 5rem;
+}
+/*#endregion Banner*/
+
+/*#region main */
+.container {
+    box-sizing: border-box;
+    background-image: url("../img/cork.png");
+    min-height: 100vh;
+}
+.col {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card { 
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+  background-color: white;
+  max-width: 300px;
+  max-height: 360px;
+   padding: 10px 10px 30px;
+   margin-top:50px;
+}
+
+img {
+  width: 266px;
+  height: 266px;
+}
+/* #endregion Main */
