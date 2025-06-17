@@ -4,10 +4,14 @@
   padding: 0;
   box-sizing: border-box;
 }
-
-body {
-  overflow-y: hidden;
+/*#region Scrollbars hidden for webkit browsers and firefox */
+body {   
+  scrollbar-width: none;  
 }
+body:-webkit-scrollbar {
+  display: none;
+}
+/*#endregion Scrollbars*/
 
 /* #region Banner */
 #banner {
