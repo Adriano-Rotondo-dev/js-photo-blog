@@ -4,6 +4,10 @@
   padding: 0;
   box-sizing: border-box;
 }
+/*hidden scrollbar*/
+body {
+  overflow-y:hidden;
+}
 
 /* #region Banner */
 #banner {
