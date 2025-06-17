@@ -29,6 +29,12 @@ h1 {
   background-image: url("../img/cork.png");
   min-height: 100vh;
 }
+#posts {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap:30px
+}
 .col {
   display: flex;
   justify-content: center;
