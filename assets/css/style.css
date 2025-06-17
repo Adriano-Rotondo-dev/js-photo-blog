@@ -33,16 +33,23 @@ h1 {
 .card {
   display: flex;
   flex-direction: column;
-  overflow: hidden;
   background-color: white;
   max-width: 300px;
   max-height: 360px;
   padding: 10px 10px 30px;
   margin-top: 50px;
+  position: relative;
+  font-family: "Edu Tas Beginner";
 }
-
-img {
-  width: 266px;
-  height: 266px;
+#pin{
+    max-width: 1.5rem;
+    max-height: 1.5rem;
+    position: absolute;
+    left: 7.6rem;
+    top:-0.5rem
+}
+#post_img {
+  max-width: 266px;
+  max-height: 266px;
 }
 /* #endregion Main */
