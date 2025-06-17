@@ -7,38 +7,38 @@
 
 /* #region Banner */
 #banner {
-    background: url("../img/wall.png");
-    min-height: 150px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  background: url("../img/wall.png");
+  min-height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 h1 {
-    font-family: "Edu Tas Beginner";
-    font-size: 5rem;
+  font-family: "Edu Tas Beginner";
+  font-size: 5rem;
 }
 /*#endregion Banner*/
 
 /*#region main */
 .container {
-    box-sizing: border-box;
-    background-image: url("../img/cork.png");
-    min-height: 100vh;
+  box-sizing: border-box;
+  background-image: url("../img/cork.png");
+  min-height: 100vh;
 }
 .col {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.card { 
-    display: flex;
-    flex-direction: column;
-    overflow: hidden;
+.card {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
   background-color: white;
   max-width: 300px;
   max-height: 360px;
-   padding: 10px 10px 30px;
-   margin-top:50px;
+  padding: 10px 10px 30px;
+  margin-top: 50px;
 }
 
 img {
