@@ -77,9 +77,9 @@ h1 {
 /*#region MEDIA QUERY */
 
 /*media query TABLET md*/
-@media screen and (max-width: 780px) {
+@media screen and (max-width: 768px) {
   h1 {
-    font-size: 4rem;
+    font-size: 3rem;
   }
 
   .col-md-5 {
@@ -87,10 +87,10 @@ h1 {
   }
 }
 /* media query Mobile sm*/
-@media screen and (max-width: 586px) {
+@media screen and (max-width: 576px) {
 
   h1 {
-    font-size: 4rem;
+    font-size: 3rem;
   }
 
   .col-sm-12 {
@@ -102,7 +102,7 @@ h1 {
 @media screen and (max-width: 390px) {
 
 h1 {
-  font-size: 4rem;
+  font-size: 2rem;
 }
 
 }
