@@ -65,7 +65,8 @@ h1 {
 
 .card:hover {
   transition: transform 0.5s;
-  transform: rotate(12deg);
+  transform: rotate(12deg) scale(1.2,1.2);
+  z-index: 1;
 }
 
 .pin {
