@@ -36,16 +36,17 @@ fetch(endpoint)
       //* aggiorno il DOM element con il MarkUp
       rowEl.insertAdjacentHTML("beforeend", postMarkUp);
     });
-    //*salvo il DOM node delle post_img per applicare la funzione a ogni foto
-    const postImgEl = document.querySelectorAll(".post_img");
-    //*inizializzo il ciclo for Each per applicare a ogni foto l'eventListener (placeholder atm)
-    postImgEl.forEach((img) => {
-      img.addEventListener("click", () => {
-        overlayImgEl.alt = img.alt
-        overlayImgEl.src = img.src
+    //*salvo il DOM node della card per applicare la funzione a ogni card 
+    const postCardEl = document.querySelectorAll(".card");
+    //*inizializzo il ciclo for Each per applicare a ogni card l'eventListener 
+    postCardEl.forEach((card) => {
+      card.addEventListener("click", () => {
+        //*recupero la singola immagine di ogni post e sostituisco il placeholder overlay con la postImgEl
+        const postImgEl= card.querySelector(".post_img")
+        overlayImgEl.alt = postImgEl.alt
+        overlayImgEl.src = postImgEl.src
         document.getElementById("overlay").style.display = "flex";
-        console.log(postImgEl)
-      });
+      }); 
       //*applico l'eventListener di chiusura (placeholder atm)
       overlayBtnEl.addEventListener("click", () => {
         document.getElementById("overlay").style.display = "none";

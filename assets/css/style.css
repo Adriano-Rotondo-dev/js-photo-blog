@@ -70,6 +70,7 @@ h1 {
   transform: rotate(10deg) scale(1.05, 1.05);
   z-index: 1;
   box-shadow: 10px 10px 20px;
+  cursor: pointer;
 }
 
 .pin {
@@ -82,7 +83,6 @@ h1 {
 .post_img {
   max-width: 266px;
   max-height: 266px;
-  cursor: pointer;
 }
 /* #endregion Main */
 
@@ -100,7 +100,7 @@ h1 {
 }
 .overlay_btn {
   position: relative;
-  left: 15rem;
+  top:1.5rem;
   border-radius: 1rem;
   background-image: url(../img/pin.svg);
   width: 2rem;
@@ -110,7 +110,7 @@ h1 {
   margin-bottom: 0.5rem;
   font-size: large;
   border: transparent;
-  color: white;
+  color: white; 
 }
 .overlay_img {
   max-width: 650px;
