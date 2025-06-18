@@ -44,6 +44,7 @@ fetch(endpoint)
         overlayImgEl.alt = img.alt
         overlayImgEl.src = img.src
         document.getElementById("overlay").style.display = "flex";
+        console.log(postImgEl)
       });
       //*applico l'eventListener di chiusura (placeholder atm)
       overlayBtnEl.addEventListener("click", () => {

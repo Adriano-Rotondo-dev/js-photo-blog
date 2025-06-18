@@ -6,11 +6,11 @@
 }
 /*#region Scrollbars hidden for webkit browsers and firefox */
 html {
-  -ms-overflow-style: none;  
-  scrollbar-width: none;     
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }
 html::-webkit-scrollbar {
-  display: none;          
+  display: none;
 }
 /*#endregion Scrollbars*/
 
@@ -72,7 +72,7 @@ h1 {
 .post_img {
   max-width: 266px;
   max-height: 266px;
-  cursor:pointer;
+  cursor: pointer;
 }
 /* #endregion Main */
 
@@ -82,26 +82,30 @@ h1 {
   position: fixed;
   width: 100%;
   height: 100%;
-  background-color: rgba(0,0,0,0.5); 
+  background-color: rgba(0, 0, 0, 0.5);
   z-index: 2;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 .overlay_btn {
-  position:relative;
-  left: 7.9rem;
-  border-radius:5px;
-  background-image: url(../img/wall.png);
-  width: 1rem;
-  height: 1rem;
-  line-height:1%;
-  cursor:pointer;
-  margin-bottom:0.5rem;
+  position: relative;
+  left: 15rem;
+  border-radius: 1rem;
+  background-image: url(../img/pin.svg);
+  width: 2rem;
+  height: 2rem;
+  line-height: 5%;
+  cursor: pointer;
+  margin-bottom: 0.5rem;
+  font-size: large;
+  border: transparent;
+  color: white;
 }
-.overlay_img { 
-  max-width: 266px;
-  max-height: 266px;
+.overlay_img {
+  max-width: 650px;
+  max-height: 500px;
+  border-radius: 1rem;
 }
 /*#endregion modal*/
 
@@ -117,9 +121,9 @@ h1 {
     width: calc((100% / 12) * 5);
   }
 }
+
 /* media query Mobile sm*/
 @media screen and (max-width: 576px) {
-
   h1 {
     font-size: 3rem;
   }
@@ -131,10 +135,9 @@ h1 {
 
 /*media query mobile xsm*/
 @media screen and (max-width: 390px) {
-
-h1 {
-  font-size: 2rem;
+  h1 {
+    font-size: 2rem;
+  }
 }
 
-}
 /*#endregion MEDIA QUERY */
