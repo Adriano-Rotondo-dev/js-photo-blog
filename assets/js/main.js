@@ -41,6 +41,8 @@ fetch(endpoint)
     //*inizializzo il ciclo for Each per applicare a ogni foto l'eventListener (placeholder atm)
     postImgEl.forEach((img) => {
       img.addEventListener("click", () => {
+        overlayImgEl.alt = img.alt
+        overlayImgEl.src = img.src
         document.getElementById("overlay").style.display = "flex";
       });
       //*applico l'eventListener di chiusura (placeholder atm)
