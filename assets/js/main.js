@@ -1,6 +1,9 @@
 //TODO: seleziono i DOM nodes necessari
 
 const rowEl = document.getElementById("posts");
+const photoEl = document.querySelectorAll(".post_img");
+const overlayBtnEl = document.getElementById("closeBtn");
+const banner = document.getElementById("banner");
 
 //* creo la variabile per salvare l'endpoint dell'API https://lanciweb.github.io/demo/api/pictures/
 
@@ -37,3 +40,12 @@ fetch(endpoint)
   .catch((error) => {
     console.error(error);
   });
+
+//*creo gli event listener di prova per il placeholder overlay
+
+banner.addEventListener("click", () => {
+  document.getElementById("overlay").style.display = "flex";
+});
+overlayBtnEl.addEventListener("click", () => {
+  document.getElementById("overlay").style.display = "none";
+});
