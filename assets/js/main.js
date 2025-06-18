@@ -1,7 +1,8 @@
 //TODO: seleziono i DOM nodes necessari
 
 const rowEl = document.getElementById("posts");
-const overlayBtnEl = document.getElementById("closeBtn");
+const overlayBtnEl = document.getElementById("close_btn");
+const overlayImgEl = document.getElementById("overlay_img")
 const banner = document.getElementById("banner");
 
 //* creo la variabile per salvare l'endpoint dell'API https://lanciweb.github.io/demo/api/pictures/

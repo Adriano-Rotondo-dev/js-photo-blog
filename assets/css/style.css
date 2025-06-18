@@ -96,9 +96,10 @@ h1 {
   width: 1rem;
   height: 1rem;
   line-height:1%;
-  cursor:pointer
+  cursor:pointer;
+  margin-bottom:0.5rem;
 }
-.overlay_img {
+.overlay_img { 
   max-width: 266px;
   max-height: 266px;
 }
