@@ -1,7 +1,6 @@
 //TODO: seleziono i DOM nodes necessari
 
 const rowEl = document.getElementById("posts");
-const photoEl = document.querySelectorAll(".post_img");
 const overlayBtnEl = document.getElementById("closeBtn");
 const banner = document.getElementById("banner");
 
@@ -36,16 +35,21 @@ fetch(endpoint)
       //* aggiorno il DOM element con il MarkUp
       rowEl.insertAdjacentHTML("beforeend", postMarkUp);
     });
+    //*salvo il DOM node delle post_img per applicare la funzione a ogni foto
+    const postImgEl = document.querySelectorAll(".post_img");
+    //*inizializzo il ciclo for Each per applicare a ogni foto l'eventListener (placeholder atm)
+    postImgEl.forEach((img) => {
+      img.addEventListener("click", () => {
+        document.getElementById("overlay").style.display = "flex";
+      });
+      //*applico l'eventListener di chiusura (placeholder atm)
+      overlayBtnEl.addEventListener("click", () => {
+        document.getElementById("overlay").style.display = "none";
+      });
+    });
   })
   .catch((error) => {
     console.error(error);
   });
 
-//*creo gli event listener di prova per il placeholder overlay
 
-banner.addEventListener("click", () => {
-  document.getElementById("overlay").style.display = "flex";
-});
-overlayBtnEl.addEventListener("click", () => {
-  document.getElementById("overlay").style.display = "none";
-});
