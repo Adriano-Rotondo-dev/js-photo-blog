@@ -61,11 +61,13 @@ h1 {
   position: relative;
   font-family: "Sometype Mono", monospace;
   box-shadow: 5px 5px 10px;
+  transition: transform 0.5s, box-shadow 0.5s;
+  transform: rotate(0deg) scale(1,1);
 }
 
 .card:hover {
-  transition: transform 0.5s;
-  transform: rotate(12deg) scale(1.2,1.2);
+  transition: transform 0.5s, box-shadow 0.5s;
+  transform: rotate(10deg) scale(1.05, 1.05);
   z-index: 1;
   box-shadow: 10px 10px 20px;
 }
